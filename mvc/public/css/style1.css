@@ -1,0 +1,51 @@
+*{
+    background-color: aquamarine;
+    align-items: center;
+    text-align: center;
+}
+.top{
+    background-color: rgb(7, 55, 95);
+    display: flex;
+}
+.body{
+    background: teal;
+    display: flex;
+    justify-content: space-between;
+}
+.table{
+    background-color: black;
+    border: 12px;
+    margin-left: 100px;
+}
+/* #single{
+    margin-left: -21px;
+} */
+#srch{
+    margin-left: 808px;
+    margin-top: 33px;
+    
+}
+#admin{
+    margin-left: 808px;
+}
+table{
+    margin-left: 60px;
+}
+#srch1{
+    margin-left: 790px;
+    margin-top: 13px;
+    margin-bottom:10px;
+}
+#log{
+    margin-left: 20px;
+}
+
+#empid{
+    width: 224px;
+    height: 38px;
+    border-radius: 10px;
+}
+/* #alert{
+    font-size: 47px;
+    color: red;
+} */
