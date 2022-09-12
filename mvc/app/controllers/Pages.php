@@ -273,7 +273,9 @@ class Pages extends Controller
     $head = array("Id", "Fname", "Lname", "Email", "Mobile", "street", "city", "state", "country", "pincode", "photo");
     fputcsv($file, $head);
     foreach ($result as $row) {
-      $lineData = array($row->Emp_id, $row->Fname, $row->Lname, $row->Email, $row->Number, $row->Street, $row->City, $row->State, $row->Country, $row->Zip, $row->Photo);
+      $image = $row->Photo;
+      $pic = "http://localhost/mvc/" .ltrim($image,'..');
+      $lineData = array($row->Emp_id, $row->Fname, $row->Lname, $row->Email, $row->Number, $row->Street, $row->City, $row->State, $row->Country, $row->Zip, $pic);
       fputcsv($file, $lineData);
       header("Content-Description:File Transfer");
       header("content-Disposition: attachment;filename=\"$filename\"");
@@ -291,7 +293,9 @@ class Pages extends Controller
     $head = array("Id", "Fname", "Lname", "Email", "Mobile", "street", "city", "state", "country", "pincode", "photo");
     fputcsv($file, $head);
     foreach ($result as $row) {
-      $lineData = array($row->Emp_id, $row->Fname, $row->Lname, $row->Email, $row->Number, $row->Street, $row->City, $row->State, $row->Country, $row->Zip, $row->Photo);
+      $image = $row->Photo;
+      $pic = "http://localhost/mvc/" .ltrim($image,'..');
+      $lineData = array($row->Emp_id, $row->Fname, $row->Lname, $row->Email, $row->Number, $row->Street, $row->City, $row->State, $row->Country, $row->Zip, $pic);
       fputcsv($file, $lineData);
       header("Content-Description:File Transfer");
       header("content-Disposition: attachment;filename=\"$filename\"");
