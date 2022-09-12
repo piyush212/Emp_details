@@ -245,6 +245,7 @@ class Pages extends Controller
   }
   public function export()
   {
+    error_reporting(E_ERROR | E_PARSE);
     $exp = $this->model('Action');
     $result = $exp->export();
     $filename =  "emp.csv";
@@ -266,6 +267,7 @@ class Pages extends Controller
   
   public function export1()
   {
+    error_reporting(E_ERROR | E_PARSE);
     $exp = $this->model('Action');
     $result = $exp->export1();
     $filename =  "emp.csv";
@@ -286,6 +288,7 @@ class Pages extends Controller
   }
   public function exportAdmin()
   {
+    error_reporting(E_ERROR | E_PARSE);
     $exp = $this->model('Action');
     $result = $exp->exportAdmin();
     $filename =  "emp.csv";
